@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import MainImage from "../components/MainImage"
 import StartSection from "../components/StartSection"
 import LegacySection from "../components/LegacySection"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <MainImage />
     <StartSection />
     <LegacySection />
+    <Footer />
   </Layout>
 )
 

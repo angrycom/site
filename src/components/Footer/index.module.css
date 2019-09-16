@@ -1,0 +1,15 @@
+.footer {
+    background: #898c91;
+    font-size: 1.5rem;
+    padding: 2em;
+}
+
+.footer * {
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .footer {
+        font-size: 1.2rem;
+    }
+}
