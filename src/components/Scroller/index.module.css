@@ -1,0 +1,12 @@
+.scroll {
+    position: fixed;
+    bottom: 3px;
+    width: 100%;
+    height: 6px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: #b01e1e;
+}

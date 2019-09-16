@@ -1,7 +1,13 @@
 import React from "react"
 import "../lib/style.css"
+import Scroller from "./Scroller"
 const Layout = ({ children }) => {
-  return <main>{children}</main>
+  return (
+    <>
+      <Scroller />
+      <main>{children}</main>
+    </>
+  )
 }
 
 export default Layout

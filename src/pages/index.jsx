@@ -6,6 +6,7 @@ import MainImage from "../components/MainImage"
 import StartSection from "../components/StartSection"
 import LegacySection from "../components/LegacySection"
 import Footer from "../components/Footer"
+import KarmaSection from "../components/KarmaSection"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <MainImage />
     <StartSection />
     <LegacySection />
+    <KarmaSection />
     <Footer />
   </Layout>
 )
