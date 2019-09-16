@@ -1,0 +1,10 @@
+.gradient {
+    height: 50vh;
+    background: linear-gradient(to bottom, #FDE055 70%, #EAEAEA);
+}
+
+.img {
+    background: white;
+    margin-top: 2rem;
+    padding: 2.5rem 0;
+}

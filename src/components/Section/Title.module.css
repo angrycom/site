@@ -1,0 +1,11 @@
+.title {
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: -.15rem;
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 3rem;
+    }
+}

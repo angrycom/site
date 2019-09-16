@@ -1,0 +1,14 @@
+.contents {
+    font-weight: lighter;
+    font-size: 1.75rem;
+}
+
+.contents>p {
+    margin-bottom: 1em;
+}
+
+@media (max-width: 640px) {
+    .contents {
+        font-size: 1.2rem;
+    }
+}

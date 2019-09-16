@@ -1,0 +1,16 @@
+.bg {
+    background: linear-gradient(to bottom, #ED345C, #FDE055);
+    height: 100vh;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    max-width: 640px;
+    width: 80%;
+    margin: auto;
+    padding-top: 20vh;
+}
