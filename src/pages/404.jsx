@@ -3,11 +3,40 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Angry from "../images/angry.svg"
+import Section from "../components/Section"
+import Title from "../components/Section/Title"
+import Contents from "../components/Section/Contents"
+
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Section>
+      <Title>Not Found</Title>
+      <div
+        style={{
+          padding: 20,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={Angry}
+          style={{
+            width: 640,
+            margin: "auto",
+            boxSizing: "border-box",
+          }}
+          alt="Angry"
+        />
+      </div>
+      <Contents>
+        <p>데이터가 없어서 조금 화가 납니다...</p>
+        <p>
+          <a href="/">메인 페이지로</a>
+        </p>
+      </Contents>
+    </Section>
   </Layout>
 )
 

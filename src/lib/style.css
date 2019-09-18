@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR|Roboto&display=swap");
 * {
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
 
 body {
-    color: #1c1d1f;
-    margin: 0;
+  color: #1c1d1f;
+  margin: 0;
+  background: #eaeaea;
 }
 
 html::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-    color: #3767b8;
+  text-decoration: none;
+  color: #3767b8;
 }
