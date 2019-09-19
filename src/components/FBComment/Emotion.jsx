@@ -60,7 +60,7 @@ const Emotion = () => {
       setMad(false)
       setTimeout(() => {
         setMad(true)
-      }, 3000)
+      }, 2000)
     }
     const id = setInterval(handler, 5000)
     handler()

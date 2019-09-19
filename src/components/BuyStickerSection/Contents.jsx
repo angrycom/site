@@ -2,6 +2,7 @@ import React from "react"
 import Contents from "../Section/Contents"
 import sticker from "../../images/sticker.svg"
 import Button from "../Form/Button"
+import Ordered from "./Ordered"
 
 const BuyStickerContents = () => (
   <Contents>
@@ -27,6 +28,7 @@ const BuyStickerContents = () => (
       }}
     >
       <h1 style={{ fontWeight: "lighter" }}>30₩ ~ 120₩ / 장</h1>
+      <Ordered />
       <p>
         총 주문 갯수에 따라 단가는 달라집니다. 공동구매 마감 후 휴대폰으로 최종
         결정된 단가를 공지드리겠습니다.

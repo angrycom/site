@@ -4,6 +4,7 @@ import Button from "../Form/Button"
 import Select from "../Form/Select"
 
 import { replace } from "gatsby"
+import Ordered from "../BuyStickerSection/Ordered"
 const checkers = {
   name(name) {
     if (name.match(/^([가-힣]{2,4})$/)) {
@@ -22,7 +23,13 @@ const checkers = {
       return [false, "10개 이상 주문하셔야 합니다."]
     }
     if (i % 10 !== 0) return [false, "10개 단위로 주문하셔야 합니다."]
-    return [true, `예상 금액: ${i * 30}₩ ~ ${i * 120}₩`]
+    return [
+      true,
+      <>
+        예상 금액: {i * 30}₩ ~ {i * 120}₩ (현 기준{" "}
+        <Ordered tag="span" text={data => data.predict * i + "₩"}></Ordered> )
+      </>,
+    ]
   },
 }
 const ShopForm = () => {
@@ -79,7 +86,14 @@ const ShopForm = () => {
         state={amount}
         checker={checkers.amount}
       />
-      <p>* 120원은 100장 제작 기준이고, 30원은 1000장 제작 기준입니다.</p>
+      <p>
+        * 120원은 100장 제작 기준이고, 30원은 1000장 제작 기준입니다. (
+        <Ordered
+          tag="span"
+          text={text => `현 기준 ${text.predict}원 예상`}
+        ></Ordered>
+        )
+      </p>
       <Select fieldName="학년" state={grade}>
         {[1, 2, 3].map(i => (
           <option value={i} key={i}>
