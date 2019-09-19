@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -33,7 +34,7 @@ const NotFoundPage = () => (
       <Contents>
         <p>데이터가 없어서 조금 화가 납니다...</p>
         <p>
-          <a href="/">메인 페이지로</a>
+          <Link to="/">메인 페이지로</Link>
         </p>
       </Contents>
     </Section>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,8 +13,9 @@ import Alert from "../components/Alert"
 const IndexPage = () => (
   <Layout>
     <SEO />
-    <Alert absolute>
-      화나요 스티커 공동구매를 시작합니다. <a href="/goods/sticker">구매하기</a>
+    <Alert absolute canClose>
+      화나요 스티커 공동구매를 시작합니다.{" "}
+      <Link to="/goods/sticker">구매하기</Link>
     </Alert>
     <MainImage />
     <StartSection />

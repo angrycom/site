@@ -2,10 +2,12 @@
     margin: 0;
     font-size: 4rem;
     letter-spacing: -.15rem;
+    word-break: keep-all;
+    word-wrap: break-word;
 }
 
 @media (max-width: 640px) {
     .title {
-        font-size: 3rem;
+        font-size: 2.75rem;
     }
 }

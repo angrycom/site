@@ -1,21 +1,34 @@
 .alert {
   padding: 15px;
   background: #f5f2a6;
+  display: flex;
   border: 1px solid #c4c286;
 }
 
 .wrap {
   padding: 15px;
 }
-.wrap.fixed,
-.wrap.absolute {
+
+.wrap.fixed, .wrap.absolute {
   top: 20px;
   left: 0;
   right: 0;
 }
+
 .wrap.fixed {
   position: fixed;
 }
+
 .wrap.absolute {
   position: absolute;
+}
+
+.contents {
+  flex: 1;
+}
+
+.close {
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0 0.3em;
 }

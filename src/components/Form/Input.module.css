@@ -1,0 +1,20 @@
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    outline: 0;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+}
+
+.fieldName {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+    font: inherit;
+}
+
+.wrap {
+    margin-bottom: 10px;
+}

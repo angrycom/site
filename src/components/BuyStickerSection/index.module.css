@@ -1,0 +1,13 @@
+.sticker {
+    display: flex;
+    padding: 50px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticker img {
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+    box-shadow: 3px 3px #9a9a9a;
+}

@@ -1,0 +1,31 @@
+.button {
+    all: unset;
+    cursor: default;
+    padding: 0.5em 1em;
+    text-align: center;
+    display: block;
+    background: #aaaaaa;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button.primary {
+    background: #c42d4f;
+    color: white;
+}
+
+.button.right {
+    float: right;
+}
+
+.wrap {
+    overflow: hidden;
+}
+
+@media (min-width: 640px) {
+    .button.reactive {
+        width: auto;
+    }
+}
